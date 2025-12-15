@@ -49,19 +49,30 @@ A comprehensive deep learning framework for training and evaluating neural netwo
 
 **Tech Stack:** Python, PyTorch, NumPy, Matplotlib, scikit-learn
 
-## 🎯 Why Single-File Projects?
+### 🏋️ Fitness Tracker (`FitnessTracker/` folder)
 
-These projects embody the principle of "maximum functionality, minimum complexity":
+A comprehensive fitness application with database backend and graphical analytics:
 
-* **Zero Setup:** Run immediately with minimal dependencies
-* **Educational:** Perfect for studying algorithms and implementations
-* **Portable:** Easy to share, fork, and modify
-* **Demonstrative:** Showcases specific skills and problem-solving approaches
+* **User Management**: Registration, login, profile updates with secure password hashing
+* **Workout Tracking**: Log workouts with type, duration, calories burned
+* **Nutrition Tracking**: Log meals with calories and food details
+* **Weight Progress**: Track weight changes with sequential entry system (Entry 1, Entry 2...)
+* **Data Visualization**: Line and bar graphs for progress tracking using matplotlib
+* **Universal Graph Generator**: Modular SQLGraphGenerator class for any database visualization
+* **SQL Database**: SQLite backend with 4 normalized tables (users, workouts, nutrition, weight_log)
 
+**Tech Stack:** Python, SQLite, matplotlib, hashlib for security, universal graph generator
+
+**Special Features:**
+* Entry-based tracking system (instead of dates) - Entry 1, Entry 2, Entry 3...
+* Built-in demo data generator for instant showcase
+* Custom SQL query support for creating any graph
+* Modular architecture that can be reused in other projects
+* **Use demo credentials:** Username: `demo_user`, Password: `demo123`
 
 ## 📝 License
 
 These projects are provided for educational and portfolio purposes. Feel free to use, modify, and distribute with proper attribution.
 
 ---
-*"Simplicity is the ultimate sophistication."* - Leonardo da Vinci
+
